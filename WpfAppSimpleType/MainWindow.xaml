@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfAppSimpleType.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MVVM Simplified"
+        FontSize="18"
+        MinWidth="300"
+        SizeToContent="WidthAndHeight"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin"
+              Value="10" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <StackPanel>
+            <Button x:Name="btnNoBinding"
+              Content="No Data Binding"
+              Click="btnNoBinding_Click" />
+            <!--<Button x:Name="btnBasicBinding"
+              Content="Basic Data Binding"
+              Click="btnBasicBinding_Click" />
+            <Button x:Name="btnOtherBinding"
+              Content="Bind to Other Properties"
+              Click="btnOtherBinding_Click" />
+            <Button x:Name="btnSimpleMVVM"
+              Content="Simple View Model"
+              Click="btnSimpleMVVM_Click" />-->
+        </StackPanel>
+    </Grid>
+</Window>
+
